@@ -1,6 +1,6 @@
 import os
 import sqlite3
-#from bottle import run
+from bottle import run
 from bottle import route
 from bottle import jinja2_template as template
 
@@ -23,7 +23,7 @@ def hellodb():
     return template('templates/db', hello=lipsum)
 
 
-#if __name__ == '__main__':
-#    from bottle import debug
-#    debug(True)
-#    run(host='localhost', port=8080)
+if __name__ == '__main__':
+   from bottle import debug
+   debug(True)
+   run(host='192.168.1.70', port=8080)
